@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    background-color: darkgray;
+}
+
+/*<--------------- PARTIE HEADER DEBUT ------------->*/
+header {
+    background-image: url(images/image-de-fond-header.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    padding-top: 5px;
+}
+
+#accueil {
+    color: yellow;
+}
+
+nav,
+a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    transition: 0.8s ease;
+}
+
+#accueil {
+    transition: 0.8s ease;
+}
+
+#accueil:hover {
+    color: black;
+}
+
+header nav a:hover {
+    color: yellow;
+}
+
+#logo {
+    height: 70px;
+    padding: 5px;
+}
+
+/*<--------------- PARTIE HEADER FIN ------------->*/
+
+/* <-------------- PARTIE BODY DEBUT -------------> */
+#couverture {
+    width: 100%;
+}
+
+#seccouverture {
+    display: flex;
+}
+
+p,
+h1 {
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px;
+}
+
+h1 {
+    font-size: 0.6cm;
+}
+
+.presentation {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+#one-barre-de-separation {
+    background-color: #2B2B2B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#two-barre-de-separation {
+    background-color: #2B2B2B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#three-barre-de-separation {
+    background-color: #2B2B2B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#four-barre-de-separation {
+    background-color: #2B2B2B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#video {
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#secvideo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    padding: 15px;
+}
+
+#specifications {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#two-spec {
+    margin-right: 100px;
+}
+
+footer {
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.icon {
+    height: 40px;
+    margin-top: 30px;
+}
+
+.politique {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding: 0;
+}
+
+.liste {
+    margin: 10px;
+}
+
+/*<--------------- PARTIE RESPONSIVE DEBUT ------------->*/
+@media screen and (max-width: 1024px) {
+    .images {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .images {
+        display: none;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    #video {
+        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #menu {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        padding-top: 5px;
+        font-size: x-small;
+    }
+
+    h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    p {
+        font-size: 4ch;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    p {
+        font-size: x-small;
+    }
+
+    h1 {
+        font-size: small;
+    }
+
+    .po {
+        font-size: xx-small;
+    }
+
+    .liste {
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    p {
+        font-size: xx-small;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .petiteimage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #video {
+        width: 320px;
+    }
+}
